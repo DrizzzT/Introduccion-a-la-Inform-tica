@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://bitstorm.org/gameoflife/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>John Conway's Game of Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Play John Conway&#39;s Game of Life right now in your browser.">
+    <meta name="keywords" content="John Conway Game of Life">
+    <meta name="application-name" content="John Conways Game of Life">
+    <link href="https://bitstorm.org/gameoflife/favicon.ico" rel="shortcut icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link title="Main" rel="stylesheet" type="text/css" href="./John Conway&#39;s Game of Life_files/style.css">
+    <script src="https://www.google-analytics.com/ga.js"></script><script src="./John Conway&#39;s Game of Life_files/mclass-min.js.descarga"></script>
+    <script src="./John Conway&#39;s Game of Life_files/miq-min.js.descarga"></script>
+    <script src="./John Conway&#39;s Game of Life_files/gameoflife.js.descarga"></script>
+</head>
+<body>
+
+<img src="./John Conway&#39;s Game of Life_files/header.png" width="543" height="119" alt="John Conway&#39;s Game of Life">
+
+<div class="body">
+
+<h3>The Game</h3>
+
+<p>The Game of Life is not your typical computer game. It is a 'cellular
+automaton', and was invented by Cambridge mathematician John Conway.</p>
+
+<p>This game became widely known when it was mentioned in an <a href="http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm" title="Mathematical Games: The fantastic combinations of John Conway&#39;s new solitaire game &quot;life&quot;">article</a> published
+by Scientific American in 1970. It consists of a collection of cells which,
+based on a few mathematical rules, can live, die or multiply. Depending on
+the initial conditions, the cells form various patterns throughout the course of the game.
+For an introduction, you can watch the <a href="http://www.youtube.com/watch?v=CgOcEZinQ2I&amp;feature=share&amp;list=FLwikA_t8e6TSJW-L-lAHkKw">video fragment from Stephen Hawkings The Meaning of Life</a>.</p>
+
+<h3>The Simulation</h3>
+
+    <div id="canvas-container">
+        <div id="canvas-div"><canvas width="803" height="506"></canvas></div>
+
+        <form>
+            <select id="shapes">
+            <option>Clear</option><option>Glider</option><option>Small Exploder</option><option>Exploder</option><option>10 Cell Row</option><option>Lightweight spaceship</option><option>Tumbler</option><option>Gosper Glider Gun</option></select>
+            <input id="next" type="button" value="Next">
+            <input id="start" type="button" value="Start">
+            <img src="./John Conway&#39;s Game of Life_files/speeddial.svg" alt="" width="20" height="20">
+            <input id="speed" type="range" min="10" max="500" step="49" value="10" title="speed dial">
+            <img src="./John Conway&#39;s Game of Life_files/grid.svg" alt="" width="20" height="20">
+            <input id="size" type="range" min="2" max="11" value="2" title="grid size">
+            <label id="generation">0</label>
+        </form>
+    </div>
+
+<h3>The Rules</h3>
+
+<dl>
+<dt><b>For a space that is 'populated':</b>
+</dt><dd>Each cell with one or no neighbors dies, as if by solitude.
+</dd><dd>Each cell with four or more neighbors dies, as if by overpopulation.
+</dd><dd>Each cell with two or three neighbors survives.
+</dd><dt><b>For a space that is 'empty' or 'unpopulated'</b>
+</dt><dd>Each cell with three neighbors becomes populated.
+</dd></dl>
+
+<h3>The Controls</h3>
+
+<p>Choose a figure from the pull-down menu or make one yourself by clicking on
+the cells with a mouse. A new generation of cells (corresponding to one
+iteration of the rules) is initiated by the 'Next' button. The 'Start'
+button advances the game by several generations.
+Game speed is regulated by the speed dial and the size of the cells with the size dial.</p>
+
+<h3>Java version</h3>
+
+<p>This page initially contained a Java applet and a Java application you can download.
+This page is still available.</p>
+
+<ul>
+<li><a href="https://bitstorm.org/gameoflife/applet.html">Game of Life Java applet</a></li>
+</ul>
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-2050318500162917";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="0233186379";
+google_color_border = "999999";
+google_color_bg = "FFFFFF";
+google_color_link = "000000";
+google_color_url = "006699";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<p><i>Life is a bit</i> -
+<a href="https://bitstorm.org/">Edwin Martin</a> &lt;<a href="mailto:edwin@bitstorm.org">edwin@bitstorm.org</a>&gt;</p>
+
+</div>
+
+<script>var _gaq=[['_setAccount','UA-93616-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+
+
+
+<script src="chrome-extension://hhojmcideegachlhfgfdhailpfhgknjm/web_accessible_resources/index.js"></script><div style="position: fixed; top: 4px; right: 4px; color: black; background-color: rgb(255, 255, 128); font-family: &quot;Lucida Console&quot;, &quot;Courier New&quot;, Mono; text-align: right; max-width: 600px; font-size: 80%;"></div></body></html>
